@@ -1,0 +1,51 @@
+{
+  "name": "web-page-loader",
+  "version": "1.0.0",
+  "description": "Endpoint to load webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server/index.js --watch src/server",
+    "postinstall": "webpack",
+    "build": "webpack",
+    "webpack-watch": "webpack --watch --colors",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-based build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmsakamoto/web-page-loader.git"
+  },
+  "author": "Derek Sakamoto",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/dmsakamoto/web-page-loader/issues"
+  },
+  "homepage": "https://github.com/dmsakamoto/web-page-loader#readme",
+  "dependencies": {
+    "history": "^1.9.0",
+    "humps": "^0.6.0",
+    "isomorphic-fetch": "^2.1.1",
+    "lodash": "^3.10.1",
+    "normalizr": "^1.0.0",
+    "react": "^0.14.0-rc1",
+    "react-dom": "^0.14.0-rc1",
+    "react-redux": "^2.1.2",
+    "react-router": "^1.0.0-rc1",
+    "redux": "^3.0.0",
+    "redux-logger": "^2.0.2",
+    "redux-router": "^1.0.0-beta3",
+    "redux-thunk": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^5.6.18",
+    "babel-loader": "^5.1.4",
+    "redux-devtools": "^2.1.5",
+    "babel-plugin-react-transform": "^1.1.0",
+    "concurrently": "^0.1.1",
+    "express": "^4.13.3",
+    "react-transform-hmr": "^1.0.0",
+    "webpack": "^1.9.11",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.2.0"
+  }
+}
